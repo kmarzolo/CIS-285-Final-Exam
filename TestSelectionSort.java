@@ -8,8 +8,8 @@ class TestSelectionSort {
 	@Test
 	public void test() {
 		testPositive();
-		//testNegative();
-		//testMixed();
+		testNegative();
+		testMixed();
 	}
 	
 	public void testPositive()
