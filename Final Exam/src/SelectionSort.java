@@ -5,12 +5,12 @@ public class SelectionSort {
         int i, j, pos, temp;
         for (i = 0; i < N; i++)
         {
-            pos = i;
-            for (j = i+1; j < N; j++)
+            pos = j;
+            for (j = i+1; j < N-1; j++)
             {
                 if (arr[j] < arr[pos])
                 {
-                    pos = j;
+                    pos = i;
                 }
             }
             /* Swap arr[i] and arr[pos] */
