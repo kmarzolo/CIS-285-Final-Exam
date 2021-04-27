@@ -1,0 +1,37 @@
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TestSelectionSort {
+
+	private SelectionSort temp1;
+	@Test
+	public void test() {
+		TestPostive();
+		TestNegative();
+		TestMixed();
+	}
+	
+	public void testPositive()
+	{
+		int[] arr = {8, 9, 7, 10, 2};
+		SelectionSort temp1 = new SelectionSort();
+		int maxValue = temp1.largest(arr);
+		assertEquals(10, maxValue, "Positive test failed");
+	}
+	public void testNegative()
+	{
+		int[] arr = {-8, -9, -7, -10, -2};
+		SelectionSort temp1 = new SelectionSort();
+		int maxValue = temp1.largest(arr);
+		assertEquals(-2, maxValue, "Negative test failed");
+	}
+	public void testMixed()
+	{
+		int[] arr = {-8, 9, -7, -10, 2};
+		SelectionSort temp1 = new SelectionSort();
+		int maxValue = temp1.largest(arr);
+		assertEquals(9, maxValue, "Mixed test failed");
+
+
+}

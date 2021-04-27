@@ -1,0 +1,25 @@
+public class SelectionSort {
+	  /* Selection Sort function */
+    public int[] sort(int arr[]){
+        int N = arr.length;
+        int i, j = 0, pos, temp;
+        for (i = 0; i < N; i++)
+        {
+            pos = j;
+            for (j = i+1; j < N; j++)
+            {
+                if (arr[i] > arr[j])
+                {
+                	temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j]= temp;        
+                }
+            }
+            /* Swap arr[i] and arr[pos] 
+            temp = arr[i];
+            arr[i] = arr[pos];
+            arr[pos]= temp;*/
+        }
+        return arr;
+    }
+}
