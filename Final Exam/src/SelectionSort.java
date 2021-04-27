@@ -9,7 +9,6 @@ public class SelectionSort {
             {
                 if (arr[i] > arr[j])
                 {
-                  /* Swap arr[i] and arr[pos] */
                   temp = arr[i];
                   arr[i] = arr[j];
                   arr[j]= temp;
